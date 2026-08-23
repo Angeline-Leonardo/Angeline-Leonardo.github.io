@@ -21,7 +21,7 @@
             --bg: #f7f5f2;
             --card-bg: #ffffff;
             --text: #2b2b2b;
-            --accent: #ff6b6b;
+            --accent: #ff6bb0;
             --accent-2: #6bc9ff;
             --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
             --radius: 16px;
@@ -32,7 +32,7 @@
             --bg: #0f1218;
             --card-bg: #171b23;
             --text: #e9eef5;
-            --accent: #ff8a8a;
+            --accent: #ff6bb0;
             --accent-2: #8ad6ff;
             --shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
         }
@@ -215,7 +215,7 @@
         }
 
         /* =========================
-       Facts
+        Facts
        ========================= */
         .facts-grid {
             display: grid;
@@ -260,7 +260,7 @@
         }
 
         /* =========================
-       Fun Fact Generator
+        Fun Fact Generator
        ========================= */
         .fun-fact-box {
             text-align: center;
@@ -304,7 +304,7 @@
         }
 
         /* =========================
-       Gallery
+        Gallery
        ========================= */
         .gallery-grid {
             display: grid;
@@ -434,7 +434,7 @@
                 <div class="hero-text">
                     <h1>My Neighbourhood's Community Cats </h1>
                     <p>
-                        The celebrities of my heart
+                        The celebrities of my heart 🩷
                     </p>
                 </div>
                 <div class="hero-img">
@@ -449,49 +449,26 @@
             </div>
         </header>
 
-        <!-- Bio Section -->
-        <section id="bio">
-            <h2 class="section-title">About the Cats</h2>
-            <div class="card bio">
-                <div class="bio-text">
-                    <p>
-                        Whiskers is the unofficial mayor of our neighbourhood, known for dramatic slow blinks,
-                        strategic loafing, and an uncanny ability to appear exactly when food is opened.
-                    </p>
-                    <p>
-                        Originally spotted near the carpark, Whiskers quickly rose to fame after a
-                        viral photo of a perfectly executed stretch on a sunny windowsill. Since then,
-                        fans from three streets over have been leaving treats and head-scratches.
-                    </p>
-                    <p>
-                        Hobbies include: eating and being grumpy.
-                    </p>
-                </div>
-                <div class="bio-img">
-                    <img src="cat2.jpg" alt="Pudding" />
-                </div>
-            </div>
-        </section>
 
         <!-- Interesting Facts -->
         <section id="facts">
             <h2 class="section-title">Interesting Facts</h2>
             <div class="facts-grid">
                 <div class="fact-card">
-                    <h3>Superpower</h3>
-                    <p>Can detect the sound of a treat bag from two houses away.</p>
+                    <h3><center> Most grumpy </center></h3>
+                    <p><center> Pumpkin (but he still wants attention) </center></p>
                 </div>
                 <div class="fact-card">
-                    <h3>Favorite Time</h3>
-                    <p>5:47 PM, when the neighbour usually cooks dinner.</p>
+                    <h3><center> Most vocal </center></h3>
+                    <p><center> Teddy </center></p>
                 </div>
                 <div class="fact-card">
-                    <h3>Signature Move</h3>
-                    <p>The “I’m starving” face, despite having just eaten.</p>
+                    <h3><center> Most docile </center></h3>
+                    <p><center> Pudding </center></p>
                 </div>
                 <div class="fact-card">
-                    <h3>Arch-Nemesis</h3>
-                    <p>The automatic vacuum cleaner (a.k.a. The Loud Monster).</p>
+                    <h3><center> Most orange </center></h3>
+                    <p><center> Mr. Fluffy </center></p>
                 </div>
             </div>
         </section>
@@ -526,14 +503,14 @@
                 </div>
                 <div class="gallery-item" data-full="cat4.jpg">
                     <img src="cat4.jpg" alt="Whiskers sleeping" />
-                    <div class="gallery-caption">Mr. Fluffy (RIP) </div>
+                    <div class="gallery-caption">Mr. Fluffy (In loving memory) </div>
                 </div>
             </div>
         </section>
 
         <footer>
             <p>
-                Made with ❤️ for a web dev assignment. All cats are local celebrities.
+                There are more cats but I'm too lazy
             </p>
         </footer>
     </div>
@@ -575,14 +552,14 @@
         const funFactBtn = document.getElementById('fun-fact-btn');
 
         const funFacts = [
-            "Pumpkin does not have any hunting ability whatsoever. He was once 5cm from a rat and had an extremely delayed reaction, failing to catch it.",
-            "Has a personal ‘no-fly zone’ above the kitchen counter that no human dares cross.",
-            "Believes that if it fits, it sits – even if ‘it’ is a tiny shoe.",
-            "Secretly runs the neighbourhood watch; all squirrels report to Whiskers.",
-            "Considers any lap that isn’t currently occupied as ‘available seating’.",
-            "Can turn a 5-minute nap into a 3-hour performance art piece.",
-            "Only drinks water from the most inconvenient container available.",
-            "Has mastered the art of looking innocent while clearly plotting chaos."
+            "Pumpkin is kind of obese.",
+            "Teddy usually finds me and yells at me before I even manage to spot him.",
+            "Pudding's favourite human is not me (which is rare for me).",
+            "Mr. Fluffy had kidney disease (this is not a very fun fact).",
+            "Pumpkin is really scared of humans and it took about a month of feeding him treats semi-regularly before he showed me his belly.",
+            "I accidentally stepped on Mr. Fluffy twice. (I was very sorry)",
+            "Teddy bullies the other cats in the neighbourhood.",
+            "Teddy and Pumpkin fought really badly before and fur was snatched."
         ];
 
         function getRandomFact() {
