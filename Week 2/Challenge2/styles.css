@@ -1,0 +1,90 @@
+/* styles.css - Challenge #2 (Skeleton: Rides Gallery) */
+
+
+/* 0) Base page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(237, 241, 243);
+}
+
+/* 1) Container */
+.container {
+    font-weight: bold;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.tagline {
+    font-weight: normal;
+}
+/* 2) Section heading */
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+/* 3) Cards wrapper (center all cards horizontally) */
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 800px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* 4) Card (size, spacing, border, rounded corners) */
+
+.card {
+    max-width: 220px;
+    max-height: 320px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid rgb(214, 211, 211);
+}
+
+/* 5) Card text (h3 title, paragraph blurb) */
+
+h3 {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 10px;
+
+}
+
+.blurb {
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 14px;
+} 
+
+/* 6) Card image (fit within card, centered) */
+
+img {
+    width: 220px;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+/* 7) Hover state: change border to green, then make it wigglew */
+
+
+/* 8) Footer */
+
+footer {
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    border-top: 1px solid rgb(198, 197, 197);
+    padding-top: 10px;
+    color: grey;
+}
