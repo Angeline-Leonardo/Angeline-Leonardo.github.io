@@ -1,78 +1,84 @@
 main {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
-  padding: 25px;
-  background-color: black;
+    padding: 25px;
+    background-color: black;
 }
 
 /* Container for image + hover card */
 .card-container {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 /* Image */
 .card-container img {
-  display: block;
-  width: 200px;
-  height: auto;
-  animation: float 3s ease-in-out infinite;
+    display: block;
+    width: 200px;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
 }
 
 /* Hover card (bio) */
 .hover-card {
-  position: absolute;
-  top: 0;
-  left: 100%; /* right outside the image */
-  margin-left: 10px; /* small gap between image and card */
-  width: 250px;
-  padding: 15px;
-  background: #ffffff;
-  color: #000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    /* right outside the image */
+    margin-left: 10px;
+    /* small gap between image and card */
+    width: 250px;
+    padding: 15px;
+    background: #ffffff;
+    color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
 
-  /* Hidden state */
-  opacity: 0;
-  visibility: hidden;
-  transform: translateX(-10px);
-  transition: all 0.3s ease-in-out;
-  pointer-events: none;
+    /* Hidden state */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10px);
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
 }
 
 .hover-card::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 100%; /* attach to left edge of bubble */
-  margin-top: -6px;
-  border-width: 6px;
-  border-style: solid;
-  border-color: transparent #ffffff transparent transparent;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    /* attach to left edge of bubble */
+    margin-top: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent #ffffff transparent transparent;
 }
+
 /* Reveal on hover */
 .card-container:hover .hover-card {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(0);
-  pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    pointer-events: auto;
 }
 
 /* Floating animation for the image */
 @keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
